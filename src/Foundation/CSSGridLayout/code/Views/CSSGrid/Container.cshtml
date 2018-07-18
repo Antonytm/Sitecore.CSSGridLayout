@@ -1,0 +1,11 @@
+﻿@using DynamicPlaceholders.Mvc.Extensions
+@using Foundation.CSSGridLayout.Helpers
+@using Foundation.CSSGridLayout.RenderingParameters
+@using Sitecore.Data
+@using Sitecore.Mvc
+@{
+    var parameters = Html.GetRenderingParameters<ContainerRenderingParameters>();
+}
+<div style="grid-template-columns: @parameters.GridTemplateColumns; grid-template-rows:@parameters.GridTemplateRows">
+    @Html.Sitecore().DynamicPlaceholder("grid-content")
+</div>

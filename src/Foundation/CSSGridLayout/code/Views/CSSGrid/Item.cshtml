@@ -1,0 +1,12 @@
+﻿@using DynamicPlaceholders.Mvc.Extensions
+@using Foundation.CSSGridLayout.Helpers
+@using Foundation.CSSGridLayout.RenderingParameters
+@using Sitecore.Data
+@using Sitecore.Mvc
+@{
+    var parameters = Html.GetRenderingParameters<ItemRenderingParameters>();
+}
+
+<div style="grid-area: @parameters.GridArea; grid-row: @parameters.GridRow; grid-column: @parameters.GridColumn;">
+    content
+</div>
