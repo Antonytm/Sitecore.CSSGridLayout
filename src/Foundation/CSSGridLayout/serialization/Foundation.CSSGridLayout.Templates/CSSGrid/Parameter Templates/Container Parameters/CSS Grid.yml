@@ -1,0 +1,18 @@
+﻿---
+ID: "8b502e19-61c9-416b-960f-740e59d3a515"
+Parent: "17c48067-f64f-4e65-8a79-3cf72d633db5"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/CSSGrid/Parameter Templates/Container Parameters/CSS Grid
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180715T125924Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
