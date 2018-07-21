@@ -6,6 +6,6 @@
 @{
     var parameters = Html.GetRenderingParameters<ContainerRenderingParameters>();
 }
-<div style="grid-template-columns: @parameters.GridTemplateColumns; grid-template-rows:@parameters.GridTemplateRows">
+<div style="@parameters.Styles">
     @Html.Sitecore().DynamicPlaceholder("grid-content")
 </div>

@@ -20,6 +20,9 @@ namespace Foundation.CSSGridLayout
                 {
                     public const string GridTemplateColumns = "GridTemplateColumns";
                     public const string GridTemplateRows = "GridTemplateRows";
+                    public const string GridTemplateColumnsPredefined = "GridTemplateColumnsPredefined";
+                    public const string GridTemplateRowsPredefined = "GridTemplateRowsPredefined";
+                    public const string Display = "Display";
                 }
 
                 public static class Item

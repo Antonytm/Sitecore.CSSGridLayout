@@ -30,7 +30,7 @@ namespace Foundation.CSSGridLayout.RenderingParameters
             return null;
         }
 
-        protected string GetItemParameterValue(string parameter, string field)
+        protected string GetItemParameterValue(string parameter, string field = "Value")
         {
 
             if (!String.IsNullOrEmpty(GetStringValue(parameter))
