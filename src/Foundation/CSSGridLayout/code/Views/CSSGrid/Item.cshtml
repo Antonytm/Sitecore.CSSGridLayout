@@ -7,6 +7,6 @@
     var parameters = Html.GetRenderingParameters<ItemRenderingParameters>();
 }
 
-<div style="grid-area: @parameters.GridArea; grid-row: @parameters.GridRow; grid-column: @parameters.GridColumn;">
+<div style="@parameters.Styles">
     content
 </div>

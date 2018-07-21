@@ -25,7 +25,11 @@ namespace Foundation.CSSGridLayout
                 public static class Item
                 {
                     public const string GridColumn = "GridColumn";
+                    public const string GridColumnStart = "GridColumnStart";
+                    public const string GridColumnEnd = "GridColumnEnd";
                     public const string GridRow = "GridRow";
+                    public const string GridRowStart = "GridRowStart";
+                    public const string GridRowEnd = "GridRowEnd";
                     public const string GridArea = "GridArea";
                 }
             }

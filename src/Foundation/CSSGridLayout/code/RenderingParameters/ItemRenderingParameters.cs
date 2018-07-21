@@ -19,5 +19,56 @@ namespace Foundation.CSSGridLayout.RenderingParameters
         public string GridColumn => GetStringValue(Const.RenderingParameters.Names.Item.GridColumn);
         public string GridRow => GetStringValue(Const.RenderingParameters.Names.Item.GridRow);
         public string GridArea => GetStringValue(Const.RenderingParameters.Names.Item.GridArea);
+        public string GridColumnStart => GetStringValue(Const.RenderingParameters.Names.Item.GridColumnStart);
+        public string GridRowStart => GetStringValue(Const.RenderingParameters.Names.Item.GridRowStart);
+        public string GridColumnEnd => GetStringValue(Const.RenderingParameters.Names.Item.GridColumnEnd);
+        public string GridRowEnd => GetStringValue(Const.RenderingParameters.Names.Item.GridRowEnd);
+
+        public string ColumnStyles
+        {
+            get
+            {
+                if (!string.IsNullOrEmpty(GridColumn))
+                {
+                    return $"grid-column: {GridColumn}";
+                }
+
+                return $"grid-column-start:{GridColumnStart}; grid-column-end:{GridColumnEnd};";
+            }
+        }
+
+        public string RowStyles
+        {
+            get
+            {
+                if (!string.IsNullOrEmpty(GridRow))
+                {
+                    return $"grid-row: {GridRow}";
+                }
+
+                return $"grid-row-start:{GridRowStart}; grid-row-end:{GridRowEnd};";
+            }
+        }
+
+        public string LocationStyles
+        {
+            get
+            {
+                if (!string.IsNullOrEmpty(GridArea))
+                {
+                    return $"grid-area: {GridArea}";
+                }
+
+                return RowStyles + ColumnStyles;
+            }
+        }
+
+        public string Styles
+        {
+            get
+            {
+                return LocationStyles;
+            }
+        }
     }
 }
