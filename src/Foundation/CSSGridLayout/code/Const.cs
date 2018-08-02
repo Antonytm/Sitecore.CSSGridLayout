@@ -26,6 +26,9 @@ namespace Foundation.CSSGridLayout
                     public const string GridColumnGap = "GridColumnGap";
                     public const string GridRowGap = "GridRowGap";
                     public const string GridGap = "GridGap";
+                    public const string JustifyItems = "JustifyItems";
+                    public const string AlignItems = "AlignItems";
+                    public const string PlaceItems = "PlaceItems";
                 }
 
                 public static class Item

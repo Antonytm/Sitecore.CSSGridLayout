@@ -24,6 +24,9 @@ namespace Foundation.CSSGridLayout.RenderingParameters
         public string GridRowGap => GetStringValue(Const.RenderingParameters.Names.Container.GridRowGap);
         public string GridGap => GetStringValue(Const.RenderingParameters.Names.Container.GridGap);
         public string Display => GetItemParameterValue(Const.RenderingParameters.Names.Container.Display);
+        public string JustifyItems => GetItemParameterValue(Const.RenderingParameters.Names.Container.JustifyItems);
+        public string AlignItems => GetItemParameterValue(Const.RenderingParameters.Names.Container.AlignItems);
+        public string PlaceItems => GetStringValue(Const.RenderingParameters.Names.Container.PlaceItems);
 
         public string DisplayStyles
         {
@@ -65,9 +68,48 @@ namespace Foundation.CSSGridLayout.RenderingParameters
             }
         }
 
+        public string JustifyItemsStyles
+        {
+            get
+            {
+                if (!string.IsNullOrEmpty(JustifyItems))
+                {
+                    return $"justify-items: {JustifyItems};";
+                }
+
+                return string.Empty;
+            }
+        }
+
+        public string AlignItemsStyles
+        {
+            get
+            {
+                if (!string.IsNullOrEmpty(AlignItems))
+                {
+                    return $"align-items: {AlignItems};";
+                }
+
+                return string.Empty;
+            }
+        }
+
+        public string PlaceItemsStyles
+        {
+            get
+            {
+                if (!string.IsNullOrEmpty(PlaceItems))
+                {
+                    return $"place-items: {PlaceItems};";
+                }
+
+                return AlignItemsStyles + JustifyItemsStyles;
+            }
+        }
+
         public string Styles
         {
-            get { return DisplayStyles + ColumnsStyles + RowStyles + GapStyles; }
+            get { return DisplayStyles + ColumnsStyles + RowStyles + GapStyles + PlaceItemsStyles; }
         }
     }
 }
