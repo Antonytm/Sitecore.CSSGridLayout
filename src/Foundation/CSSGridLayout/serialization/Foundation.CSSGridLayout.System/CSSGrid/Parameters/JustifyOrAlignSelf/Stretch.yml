@@ -1,15 +1,15 @@
 ﻿---
-ID: "da95a800-fd0a-47e2-9b73-62603b67d019"
+ID: "0e2218e0-337b-4044-a048-8e180f59bf93"
 Parent: "ab592791-45e3-4a82-8b85-1109de6c1222"
 Template: "6d0d94e9-dc66-4a0d-b75b-5f08dda83b57"
-Path: /sitecore/system/Modules/CSSGrid/Parameters/JustifySelf/End
+Path: /sitecore/system/Modules/CSSGrid/Parameters/JustifyOrAlignSelf/Stretch
 DB: master
 Languages:
 - Language: en
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: end
+    Value: stretch
   Versions:
   - Version: 1
     Fields:
@@ -22,4 +22,4 @@ Languages:
         sitecore\admin
     - ID: "a61e7677-3bc9-4bc4-8e36-edc66a02ecf4"
       Hint: Value
-      Value: end
+      Value: stretch

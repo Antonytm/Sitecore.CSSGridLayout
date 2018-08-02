@@ -23,7 +23,9 @@ namespace Foundation.CSSGridLayout.RenderingParameters
         public string GridRowStart => GetStringValue(Const.RenderingParameters.Names.Item.GridRowStart);
         public string GridColumnEnd => GetStringValue(Const.RenderingParameters.Names.Item.GridColumnEnd);
         public string GridRowEnd => GetStringValue(Const.RenderingParameters.Names.Item.GridRowEnd);
-        public string JustifySelf => GetStringValue(Const.RenderingParameters.Names.Item.JustifySelf);
+        public string JustifySelf => GetItemParameterValue(Const.RenderingParameters.Names.Item.JustifySelf);
+        public string AlignSelf => GetItemParameterValue(Const.RenderingParameters.Names.Item.AlignSelf);
+        public string PlaceSelf => GetStringValue(Const.RenderingParameters.Names.Item.PlaceSelf);
 
         public string ColumnStyles
         {
@@ -77,11 +79,37 @@ namespace Foundation.CSSGridLayout.RenderingParameters
             }
         }
 
+        public string AlignSelfStyles
+        {
+            get
+            {
+                if (!string.IsNullOrEmpty(AlignSelf))
+                {
+                    return $"align-self: {AlignSelf};";
+                }
+
+                return string.Empty;
+            }
+        }
+
+        public string PlaceSelfStyles
+        {
+            get
+            {
+                if (!string.IsNullOrEmpty(PlaceSelf))
+                {
+                    return $"place-self: {PlaceSelf};";
+                }
+
+                return AlignSelfStyles + JustifySelfStyles;
+            }
+        }
+
         public string Styles
         {
             get
             {
-                return LocationStyles + JustifySelfStyles;
+                return LocationStyles + PlaceSelfStyles;
             }
         }
     }

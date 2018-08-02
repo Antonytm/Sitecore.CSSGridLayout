@@ -2,7 +2,7 @@
 ID: "19ed2413-d9a6-4907-ae08-e924750e7a64"
 Parent: "ab592791-45e3-4a82-8b85-1109de6c1222"
 Template: "6d0d94e9-dc66-4a0d-b75b-5f08dda83b57"
-Path: /sitecore/system/Modules/CSSGrid/Parameters/JustifySelf/Start
+Path: /sitecore/system/Modules/CSSGrid/Parameters/JustifyOrAlignSelf/Start
 DB: master
 Languages:
 - Language: en

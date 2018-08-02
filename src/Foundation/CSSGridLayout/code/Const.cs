@@ -35,6 +35,8 @@ namespace Foundation.CSSGridLayout
                     public const string GridRowEnd = "GridRowEnd";
                     public const string GridArea = "GridArea";
                     public const string JustifySelf = "JustifySelf";
+                    public const string AlignSelf = "AlignSelf";
+                    public const string PlaceSelf = "PlaceSelf";
                 }
             }
         }
