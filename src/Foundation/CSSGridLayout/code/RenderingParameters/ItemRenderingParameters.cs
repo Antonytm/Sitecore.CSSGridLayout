@@ -23,6 +23,7 @@ namespace Foundation.CSSGridLayout.RenderingParameters
         public string GridRowStart => GetStringValue(Const.RenderingParameters.Names.Item.GridRowStart);
         public string GridColumnEnd => GetStringValue(Const.RenderingParameters.Names.Item.GridColumnEnd);
         public string GridRowEnd => GetStringValue(Const.RenderingParameters.Names.Item.GridRowEnd);
+        public string JustifySelf => GetStringValue(Const.RenderingParameters.Names.Item.JustifySelf);
 
         public string ColumnStyles
         {
@@ -30,7 +31,7 @@ namespace Foundation.CSSGridLayout.RenderingParameters
             {
                 if (!string.IsNullOrEmpty(GridColumn))
                 {
-                    return $"grid-column: {GridColumn}";
+                    return $"grid-column: {GridColumn};";
                 }
 
                 return $"grid-column-start:{GridColumnStart}; grid-column-end:{GridColumnEnd};";
@@ -43,7 +44,7 @@ namespace Foundation.CSSGridLayout.RenderingParameters
             {
                 if (!string.IsNullOrEmpty(GridRow))
                 {
-                    return $"grid-row: {GridRow}";
+                    return $"grid-row: {GridRow};";
                 }
 
                 return $"grid-row-start:{GridRowStart}; grid-row-end:{GridRowEnd};";
@@ -56,10 +57,23 @@ namespace Foundation.CSSGridLayout.RenderingParameters
             {
                 if (!string.IsNullOrEmpty(GridArea))
                 {
-                    return $"grid-area: {GridArea}";
+                    return $"grid-area: {GridArea};";
                 }
 
                 return RowStyles + ColumnStyles;
+            }
+        }
+
+        public string JustifySelfStyles
+        {
+            get
+            {
+                if (!string.IsNullOrEmpty(JustifySelf))
+                {
+                    return $"justify-self: {JustifySelf};";
+                }
+
+                return string.Empty;
             }
         }
 
@@ -67,7 +81,7 @@ namespace Foundation.CSSGridLayout.RenderingParameters
         {
             get
             {
-                return LocationStyles;
+                return LocationStyles + JustifySelfStyles;
             }
         }
     }

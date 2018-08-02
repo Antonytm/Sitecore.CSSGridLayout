@@ -2,10 +2,14 @@
 ID: "2a60f61e-daac-45b3-8bed-def59515844c"
 Parent: "afe69d23-b2ad-4a84-aa5a-d0021b976620"
 Template: "0437fee2-44c9-46a6-abe9-28858d9fee8c"
-Path: /sitecore/templates/CSSGrid/Parameter Templates
+Path: /sitecore/templates/CSSGrid/ParameterTemplates
 DB: master
 Languages:
 - Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Parameter Templates
   Versions:
   - Version: 1
     Fields:

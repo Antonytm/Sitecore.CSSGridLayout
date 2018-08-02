@@ -2,7 +2,7 @@
 ID: "8754b731-a7cf-4578-837b-982e030f50a6"
 Parent: "17c48067-f64f-4e65-8a79-3cf72d633db5"
 Template: "17c48067-f64f-4e65-8a79-3cf72d633db5"
-Path: /sitecore/templates/CSSGrid/Parameter Templates/Container Parameters/__Standard Values
+Path: /sitecore/templates/CSSGrid/ParameterTemplates/ContainerParameters/__Standard Values
 DB: master
 Languages:
 - Language: en

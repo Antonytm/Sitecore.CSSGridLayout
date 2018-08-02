@@ -2,7 +2,7 @@
 ID: "17c48067-f64f-4e65-8a79-3cf72d633db5"
 Parent: "2a60f61e-daac-45b3-8bed-def59515844c"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/CSSGrid/Parameter Templates/Container Parameters
+Path: /sitecore/templates/CSSGrid/ParameterTemplates/ContainerParameters
 DB: master
 SharedFields:
 - ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
@@ -16,6 +16,10 @@ SharedFields:
   Value: "{8754B731-A7CF-4578-837B-982E030F50A6}"
 Languages:
 - Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Container Parameters
   Versions:
   - Version: 1
     Fields:

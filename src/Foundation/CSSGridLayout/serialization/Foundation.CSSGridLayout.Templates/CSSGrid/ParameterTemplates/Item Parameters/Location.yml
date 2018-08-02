@@ -1,8 +1,8 @@
 ﻿---
-ID: "8b502e19-61c9-416b-960f-740e59d3a515"
-Parent: "17c48067-f64f-4e65-8a79-3cf72d633db5"
+ID: "d286782e-4904-4f83-a64c-7252473a8a34"
+Parent: "0d878c86-6c04-468d-9c0d-3861a76ab072"
 Template: "e269fbb5-3750-427a-9149-7aa950b49301"
-Path: /sitecore/templates/CSSGrid/Parameter Templates/Container Parameters/CSS Grid
+Path: /sitecore/templates/CSSGrid/ParameterTemplates/Item Parameters/Location
 DB: master
 Languages:
 - Language: en
@@ -11,7 +11,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20180715T125924Z
+      Value: 20180721T121602Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

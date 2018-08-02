@@ -1,21 +1,21 @@
 ﻿---
-ID: "7add4d96-39ad-46b0-9de8-ea3c298001b8"
+ID: "ab592791-45e3-4a82-8b85-1109de6c1222"
 Parent: "b93ab0cb-5de2-4d15-b3aa-556413b86d04"
 Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
-Path: /sitecore/system/Modules/CSSGrid/Parameters/RowTempates
+Path: /sitecore/system/Modules/CSSGrid/Parameters/JustifySelf
 DB: master
 Languages:
 - Language: en
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: Row Templates
+    Value: Justify Self
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20180721T142247Z
+      Value: 20180802T194000Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
