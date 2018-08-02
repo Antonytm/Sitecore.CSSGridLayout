@@ -20,7 +20,9 @@ namespace Foundation.CSSGridLayout.RenderingParameters
         public string GridTemplateRowsPredefined => GetItemParameterValue(Const.RenderingParameters.Names.Container.GridTemplateRowsPredefined);
         public string GridTemplateColumns => GetStringValue(Const.RenderingParameters.Names.Container.GridTemplateColumns);
         public string GridTemplateRows => GetStringValue(Const.RenderingParameters.Names.Container.GridTemplateRows);
-
+        public string GridColumnGap => GetStringValue(Const.RenderingParameters.Names.Container.GridColumnGap);
+        public string GridRowGap => GetStringValue(Const.RenderingParameters.Names.Container.GridRowGap);
+        public string GridGap => GetStringValue(Const.RenderingParameters.Names.Container.GridGap);
         public string Display => GetItemParameterValue(Const.RenderingParameters.Names.Container.Display);
 
         public string DisplayStyles
@@ -29,6 +31,19 @@ namespace Foundation.CSSGridLayout.RenderingParameters
             {
                 var style = string.IsNullOrEmpty(Display) ? "grid" : Display;
                 return $"display:{style};";
+            }
+        }
+
+        public string GapStyles
+        {
+            get
+            {
+                if (!string.IsNullOrEmpty(GridGap))
+                {
+                    return $"grid-gap: {GridGap};";
+                }
+
+                return $"grid-column-gap:{GridColumnGap}; grid-row-gap:{GridRowGap};";
             }
         }
 
@@ -52,7 +67,7 @@ namespace Foundation.CSSGridLayout.RenderingParameters
 
         public string Styles
         {
-            get { return DisplayStyles + ColumnsStyles + RowStyles; }
+            get { return DisplayStyles + ColumnsStyles + RowStyles + GapStyles; }
         }
     }
 }
