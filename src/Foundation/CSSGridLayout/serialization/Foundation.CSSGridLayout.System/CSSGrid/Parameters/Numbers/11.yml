@@ -1,0 +1,25 @@
+﻿---
+ID: "52b4d6de-d478-48c5-bbd2-818f69752834"
+Parent: "944e4a74-78aa-4a8b-aff6-91c194f43ed9"
+Template: "6d0d94e9-dc66-4a0d-b75b-5f08dda83b57"
+Path: /sitecore/system/Modules/CSSGrid/Parameters/Numbers/11
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180721T121200Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "a61e7677-3bc9-4bc4-8e36-edc66a02ecf4"
+      Hint: Value
+      Value: 11

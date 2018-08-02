@@ -1,0 +1,25 @@
+﻿---
+ID: "db8d2593-61c8-4c60-8be3-af7a182218ff"
+Parent: "7add4d96-39ad-46b0-9de8-ea3c298001b8"
+Template: "6d0d94e9-dc66-4a0d-b75b-5f08dda83b57"
+Path: /sitecore/system/Modules/CSSGrid/Parameters/RowTempates/3Rows
+DB: master
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: repeat(3, 1fr)
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180721T142313Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "a61e7677-3bc9-4bc4-8e36-edc66a02ecf4"
+      Hint: Value
+      Value: repeat(3, 1fr)
