@@ -10,8 +10,11 @@ New-Item -Name build\package -ItemType directory
 New-Item -Name build\artifacts -ItemType directory
 New-Item -Name build\package\Data -ItemType directory
 New-Item -Name build\package\bin -ItemType directory
+New-Item -Name build\package\Views -ItemType directory
+New-Item -Name build\package\Views\CSSGrid -ItemType directory
 New-Item -Name build\package\App_Config\Include\Foundation -ItemType directory
 
+Copy-Item .\src\Foundation\CSSGridLayout\code\Views\CSSGrid\* .\build\package\Views\CSSGrid
 Copy-Item .\src\Foundation\CSSGridLayout\code\bin\Foundation.CSSGrid* .\build\package\bin
 Copy-Item .\src\Foundation\CSSGridLayout\code\App_Config\Include\Foundation\Foundation.CSSGridLayout.config .\build\package\App_Config\Include\Foundation
 Copy-Item .\src\Foundation\CSSGridLayout\serialization\* .\build\package\Data -recurse
