@@ -1,0 +1,18 @@
+﻿---
+ID: "d2a19d8f-91aa-48c5-ae53-dfbab7da9bc0"
+Parent: "cb2117fa-bd84-4d0b-973e-bde448d4a48d"
+Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
+Path: /sitecore/layout/Placeholder Settings/CSSGrid/gridcontent
+DB: master
+SharedFields:
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: gridcontent
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180718T194110Z
