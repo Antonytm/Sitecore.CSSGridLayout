@@ -5,7 +5,7 @@ artifacts:
 before_build:
   - nuget sources add -Name SitecorePublicFeed -Source https://sitecore.myget.org/F/sc-packages/api/v3/index.json
   - nuget restore Sitecore.CSSGridLayout.sln
-  - MSBuild.SonarQube.Runner.exe begin /k:"Sitecore.CSSGridLayout" /d:"sonar.host.url=https://sonarqube.com" /d:"sonar.login=%sonar_token%" /d:"sonar.organization=antonytm-github" /n:"Sitecore.CSSGridLayout"
+  - MSBuild.SonarQube.Runner.exe begin /k:"Sitecore.CSSGridLayout" /d:"sonar.host.url=https://sonarqube.com" /d:"sonar.login=%sonar_token%" /n:"Sitecore.CSSGridLayout" /o:"antonytm-github"
 build:
   project: Sitecore.CSSGridLayout.sln
 after_build:
