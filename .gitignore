@@ -1,2 +1,7 @@
 /src/Foundation/CSSGridLayout/code/bin
 /src/Project/Example/code/bin
+.vs/*
+packages/*
+**/*/obj/Debug/*
+src/Foundation/CSSGridLayout/code/obj/Debug/Foundation.CSSGridLayout.csproj.CopyComplete
+src/Foundation/CSSGridLayout/serialization/Foundation.CSSGridLayout.PlaceholderSettings/CSSGrid/cssgridexample.yml
